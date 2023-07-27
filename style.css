@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "IBM_light";
+    src: url("font/IBMPlexSansKR-Light.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "IBM_midium";
+    src: url("font/IBMPlexSansKR-Medium.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "IBM_regular";
+    src: url("font/IBMPlexSansKR-Regular.ttf") format("truetype");
+  }
+
+  .left_panel{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 5vw;
+    height:100vh;
+    border: 1px solid aqua;
+  }
+  .main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #010A13;
+  }
+  .right_panel{
+    position: relative;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 5vw;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .music_panel{
+    font-family: IBM_light;
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+    text-orientation:sideways-right;
+    width: auto;
+    height: 20%;
+    position: absolute;
+    top: 0px;
+  }
+  .music_panel button{
+    color: #A09B8C;
+    font-size: 1em;
+  }
+  .music_panel button .active{
+    color: #C8AA6E;
+  }
+  
+  .music_panel span{
+    color: #C8AA6E;
+    font-size: 1em;
+  }
+ 
+  .con_panel{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+  }
+  .connect_svg{
+    width: 50%;
+    height: 50%;
+  }
